@@ -7,15 +7,17 @@
         android:layout_height="match_parent">
 
     <EditText
-            android:id="@+id/editText2"
-            android:layout_width="374dp"
-            android:layout_height="321dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/textView2" android:layout_marginBottom="16dp"/>
+        android:id="@+id/editText2"
+        android:layout_width="374dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintBottom_toTopOf="@+id/appreciateText"/>
 
     <ImageView
             android:id="@+id/appreciatee"
@@ -32,7 +34,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/avatar_photo" />
 
-    <ImageView
+    <ImageButton
             android:id="@+id/imageView7"
             android:layout_width="125dp"
             android:layout_height="65dp"
@@ -47,7 +49,7 @@
             app:srcCompat="@drawable/ic_spellcheck_black_24dp" />
 
     <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/appreciateText"
             android:layout_width="355dp"
             android:layout_height="52dp"
             android:layout_marginStart="26dp"
@@ -56,20 +58,24 @@
             android:layout_marginRight="31dp"
             android:layout_marginBottom="13dp"
             android:gravity="center"
-            android:text="Appreciate!"
+            android:text="vvv Appreciate! vvv"
             android:textSize="29dp"
             app:layout_constraintBottom_toTopOf="@+id/imageView7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-            android:id="@+id/textView7"
-            android:layout_width="364dp"
-            android:layout_height="32dp"
-            android:text="Why would you like to appreciate them?"
-            android:gravity="center"
-            app:layout_constraintTop_toBottomOf="@+id/imageView7" app:layout_constraintBottom_toTopOf="@+id/editText2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-    />
+        android:id="@+id/textView7"
+        android:layout_width="364dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:text="Why would you like to appreciate them?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appreciatee" />
 </androidx.constraintlayout.widget.ConstraintLayout>
