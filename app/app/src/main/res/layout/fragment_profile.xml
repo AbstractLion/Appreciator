@@ -76,7 +76,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/avatar_photo" />
+        app:srcCompat="@drawable/th_7" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,7 +86,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilePic"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/profilePic">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanks for helping me find the bug in my program, you saved me hours of debugging! - Dragon He"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanks for greeting me with such a cherry smile when I arrived at work today! - Leon Si"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanks for teaching me how to set up an Android Application, especially since I'm not very experienced at it! - Naomi C."
+            android:textSize="25dp"/>
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
