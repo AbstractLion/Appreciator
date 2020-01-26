@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -21,13 +24,17 @@ public class DashboardFragment extends Fragment {
         dashboardViewModel =
                 ViewModelProviders.of(this).get(DashboardViewModel.class);
         View root = inflater.inflate(R.layout.fragment_appreciate, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+
+        ScrollView myScrollView = root.findViewById(R.id.employees);
+        LinearLayout employees = (LinearLayout)myScrollView.getChildAt(0);
+        for(int i=0; i < employees.getChildCount(); i++) {
+            LinearLayout cur_row = (LinearLayout) employees.getChildAt(i);
+            for (int j=0; j < cur_row.getChildCount(); ++j) {
+                ImageButton button = (ImageButton) cur_row.getChildAt(j);
+
+
             }
-        });
+        }
         return root;
     }
 }
