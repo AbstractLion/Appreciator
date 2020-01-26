@@ -35,7 +35,7 @@
             app:srcCompat="@drawable/avatar_photo" />
 
     <ImageButton
-            android:id="@+id/imageView7"
+            android:id="@+id/submitAppreciationButton"
             android:layout_width="125dp"
             android:layout_height="65dp"
             android:layout_marginStart="144dp"
@@ -46,7 +46,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_spellcheck_black_24dp" />
+            app:srcCompat="@drawable/ic_spellcheck_black_24dp" android:onClick="onSubmitClick"/>
 
     <TextView
             android:id="@+id/appreciateText"
@@ -60,7 +60,7 @@
             android:gravity="center"
             android:text="vvv Appreciate! vvv"
             android:textSize="29dp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView7"
+            app:layout_constraintBottom_toTopOf="@+id/submitAppreciationButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
