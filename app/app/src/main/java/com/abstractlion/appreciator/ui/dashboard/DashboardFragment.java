@@ -40,6 +40,7 @@ public class DashboardFragment extends Fragment {
                 button.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
                         Intent intent = new Intent(v.getContext(), AppreciationForm.class);
+                        intent.putExtra("image_id", fi*3+fj+1);
                         startActivity(intent);
                     }
                 });
