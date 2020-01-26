@@ -32,8 +32,10 @@ public class DashboardFragment extends Fragment {
         ScrollView myScrollView = root.findViewById(R.id.employees);
         LinearLayout employees = (LinearLayout)myScrollView.getChildAt(0);
         for(int i=0; i < employees.getChildCount(); i++) {
+            final int fi = i;
             LinearLayout cur_row = (LinearLayout) employees.getChildAt(i);
             for (int j=0; j < cur_row.getChildCount(); ++j) {
+                final int fj = j;
                 ImageButton button = (ImageButton) cur_row.getChildAt(j);
                 button.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
