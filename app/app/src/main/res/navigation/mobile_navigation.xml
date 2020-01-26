@@ -9,17 +9,17 @@
             android:id="@+id/navigation_home"
             android:name="com.abstractlion.appreciator.ui.home.HomeFragment"
             android:label="@string/title_profile"
-            tools:layout="@layout/fragment_home"/>
+            tools:layout="@layout/fragment_profile"/>
 
     <fragment
             android:id="@+id/navigation_dashboard"
             android:name="com.abstractlion.appreciator.ui.dashboard.DashboardFragment"
             android:label="@string/title_appreciate"
-            tools:layout="@layout/fragment_dashboard"/>
+            tools:layout="@layout/fragment_appreciate"/>
 
     <fragment
             android:id="@+id/navigation_notifications"
             android:name="com.abstractlion.appreciator.ui.notifications.NotificationsFragment"
             android:label="@string/title_summary"
-            tools:layout="@layout/fragment_notifications"/>
+            tools:layout="@layout/fragment_summary"/>
 </navigation>
