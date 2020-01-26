@@ -1,5 +1,6 @@
 package com.abstractlion.appreciator.ui.dashboard;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import com.abstractlion.appreciator.AppreciationForm;
+import com.abstractlion.appreciator.MainActivity;
 import com.abstractlion.appreciator.R;
 
 public class DashboardFragment extends Fragment {
@@ -25,6 +28,7 @@ public class DashboardFragment extends Fragment {
                 ViewModelProviders.of(this).get(DashboardViewModel.class);
         View root = inflater.inflate(R.layout.fragment_appreciate, container, false);
         final View rootView = root;
+        final DashboardFragment self = this;
         ScrollView myScrollView = root.findViewById(R.id.employees);
         LinearLayout employees = (LinearLayout)myScrollView.getChildAt(0);
         for(int i=0; i < employees.getChildCount(); i++) {
@@ -33,20 +37,10 @@ public class DashboardFragment extends Fragment {
                 ImageButton button = (ImageButton) cur_row.getChildAt(j);
                 button.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
-                        System.out.println("hi");
-/*
-                        View C = rootView.findViewById(R.layout.appreciation_form);
-                        ViewGroup parent = (ViewGroup) C.getParent();
-                        int index = parent.indexOfChild(C);
-                        parent.removeView(C);
-                        C = getLayoutInflater().inflate(optionId, parent, false);
- */
-
-
-
+                        Intent intent = new Intent(v.getContext(), AppreciationForm.class);
+                        startActivity(intent);
                     }
                 });
-
             }
         }
         return root;
