@@ -38,11 +38,10 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        try {
-            return inflater.inflate(R.layout.fragment_home, container, false);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+        homeViewModel =
+                ViewModelProviders.of(this).get(HomeViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_home, container, false);
+
+        return root;
     }
 }
