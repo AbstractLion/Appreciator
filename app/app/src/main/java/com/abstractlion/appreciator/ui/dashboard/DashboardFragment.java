@@ -24,14 +24,23 @@ public class DashboardFragment extends Fragment {
         dashboardViewModel =
                 ViewModelProviders.of(this).get(DashboardViewModel.class);
         View root = inflater.inflate(R.layout.fragment_appreciate, container, false);
-
+        final View rootView = root;
         ScrollView myScrollView = root.findViewById(R.id.employees);
         LinearLayout employees = (LinearLayout)myScrollView.getChildAt(0);
         for(int i=0; i < employees.getChildCount(); i++) {
             LinearLayout cur_row = (LinearLayout) employees.getChildAt(i);
             for (int j=0; j < cur_row.getChildCount(); ++j) {
                 ImageButton button = (ImageButton) cur_row.getChildAt(j);
+                button.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
 
+                        View C = rootView.findViewById(R.id.appreciation_form);
+                        ViewGroup parent = (ViewGroup) C.getParent();
+                        int index = parent.indexOfChild(C);
+                        parent.removeView(C);
+                        C = getLayoutInflater().inflate(optionId, parent, false);
+                    }
+                });
 
             }
         }
