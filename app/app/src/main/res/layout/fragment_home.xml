@@ -31,8 +31,8 @@
 
     <ImageButton
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="100dp"
@@ -40,16 +40,14 @@
         android:layout_marginRight="35dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
+        android:src="@drawable/img01"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="100dp"
@@ -57,16 +55,18 @@
         android:layout_marginRight="36dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
+        android:src="@drawable/img03"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="8dp"
@@ -78,13 +78,13 @@
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/img02" />
 
 
     <ImageButton
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="8dp"
@@ -96,13 +96,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/img04"/>
 
 
     <ImageButton
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="8dp"
@@ -114,12 +114,12 @@
         app:layout_constraintEnd_toStartOf="@+id/button6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/img05"/>
 
     <ImageButton
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="8dp"
@@ -131,12 +131,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button5"
         app:layout_constraintTop_toBottomOf="@+id/button4"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/img02" />
 
     <ImageButton
         android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="8dp"
@@ -148,12 +148,12 @@
         app:layout_constraintEnd_toStartOf="@+id/button8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5"
-        tools:srcCompat="@tools:sample/avatars"/>
+        android:src="@drawable/img07"/>
 
     <ImageButton
         android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="8dp"
@@ -165,7 +165,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button6"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/img06"/>
 
     <TextView
         android:id="@+id/textView"
@@ -181,7 +181,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button2"
         app:layout_constraintVertical_bias="0.933"
-        android:onClick="appreciate"/>
+        android:onClick="appreciate"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -197,7 +198,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button3"
         app:layout_constraintVertical_bias="0.933"
-        android:onClick="appreciate"/>
+        android:onClick="appreciate"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -213,7 +215,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button5"
         app:layout_constraintVertical_bias="1.0"
-        android:onClick="appreciate"/>
+        android:onClick="appreciate"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/textView6"
@@ -229,7 +232,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button7"
         app:layout_constraintVertical_bias="1.0"
-        android:onClick="appreciate"/>
+        android:onClick="appreciate"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -244,7 +248,8 @@
         app:layout_constraintTop_toTopOf="@+id/button"
         app:layout_constraintVertical_bias="0.933"
         android:textAlignment="center"
-        android:onClick="appreciate"/>
+        android:onClick="appreciate"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/textView7"
@@ -259,7 +264,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button4"
         app:layout_constraintVertical_bias="0.933"
-        android:onClick="appreciate"/>
+        android:onClick="appreciate"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/textView8"
@@ -274,7 +280,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button6"
         app:layout_constraintVertical_bias="0.933"
-        android:onClick="appreciate"/>
+        android:onClick="appreciate"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/textView9"
@@ -289,7 +296,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button8"
         app:layout_constraintVertical_bias="0.933"
-        android:onClick="appreciate"/>
+        android:onClick="appreciate"
+        android:textColor="@color/white"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

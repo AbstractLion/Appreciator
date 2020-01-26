@@ -45,6 +45,7 @@ public class AppreciateActivity extends AppCompatActivity {
 
 
     public void submit(View view) {
+        AppreciateTracker.updateRanking();
         Toast toast = Toast.makeText(getApplicationContext(), "Thanks for sharing the happiness!", Toast.LENGTH_LONG);
         toast.show();
         finish();
