@@ -16,7 +16,7 @@ import com.abstractlion.appreciator.R;
 
 public class ProfileSendAppreciatorListActivity extends Activity {
     ListView listView;
-    TextView textView;
+    TextView textListView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
