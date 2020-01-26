@@ -33,12 +33,17 @@ public class DashboardFragment extends Fragment {
                 ImageButton button = (ImageButton) cur_row.getChildAt(j);
                 button.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
-
-                        View C = rootView.findViewById(R.id.appreciation_form);
+                        System.out.println("hi");
+/*
+                        View C = rootView.findViewById(R.layout.appreciation_form);
                         ViewGroup parent = (ViewGroup) C.getParent();
                         int index = parent.indexOfChild(C);
                         parent.removeView(C);
                         C = getLayoutInflater().inflate(optionId, parent, false);
+ */
+
+
+
                     }
                 });
 

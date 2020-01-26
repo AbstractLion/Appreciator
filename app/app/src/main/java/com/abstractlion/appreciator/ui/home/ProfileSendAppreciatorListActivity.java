@@ -27,7 +27,7 @@ public class ProfileSendAppreciatorListActivity extends Activity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, values);
 
-        ListView listView = (ListView) findViewById(R.id.listView);
-        listView.setAdapter(adapter);
+       //  ListView listView = (ListView) findViewById(R.id.listView);
+        //listView.setAdapter(adapter);
     }
 }
