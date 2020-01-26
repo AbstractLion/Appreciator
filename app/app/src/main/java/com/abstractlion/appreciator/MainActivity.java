@@ -1,6 +1,10 @@
 package com.abstractlion.appreciator;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -9,6 +13,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,4 +30,10 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
+    public void appreciate(View view) {
+        Intent intent = new Intent(this, AppreciateActivity.class);
+        String name = ((TextView)view).getText().toString();
+        intent.putExtra("name", name);
+        startActivity(intent);
+    }
 }
