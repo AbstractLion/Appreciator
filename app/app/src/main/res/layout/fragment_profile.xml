@@ -47,7 +47,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"
-        android:text="24"
+        android:text="3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -58,7 +58,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="72dp"
         android:layout_marginRight="72dp"
-        android:text="54"
+        android:text="5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -98,7 +98,7 @@
                 android:orientation="vertical" >
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/textView16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Thanks for teaching me how to set up an Android Application, especially since I'm not very experienced at it! - Naomi C."
@@ -116,6 +116,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Thanks for greeting me with such a cherry smile when I arrived at work today! - Leon Si"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n\n"
                     android:textSize="25dp" />
             </LinearLayout>
         </ScrollView>
