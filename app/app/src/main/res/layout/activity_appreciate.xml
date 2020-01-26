@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.189"
-        android:src="@drawable/img07"/>
+        android:src="@drawable/img03"/>
 
     <TextView
         android:id="@+id/appreciateName"

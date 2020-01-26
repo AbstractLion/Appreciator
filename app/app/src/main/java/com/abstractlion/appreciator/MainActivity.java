@@ -30,10 +30,12 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
-    public void appreciate(View view) {
-        Intent intent = new Intent(this, AppreciateActivity.class);
+    public void appreciate(View view, int id) {
+        id = R.id.imageView;
+        Intent intent = new Intent(this, AppreciationForm.class);
         String name = ((TextView)view).getText().toString();
         intent.putExtra("name", name);
+        intent.putExtra("image_id", id);
         startActivity(intent);
     }
 }

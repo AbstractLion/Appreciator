@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -26,6 +27,7 @@ public class HomeFragment extends Fragment {
     private ImageButton b6;
     private ImageButton b7;
     private ImageButton b8;
+    private HomeViewModel homeViewModel;
 
     public void onCreate(Bundle savedInstanceState){
         try {
@@ -43,6 +45,13 @@ public class HomeFragment extends Fragment {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return null;
+
+
+        homeViewModel =
+                ViewModelProviders.of(this).get(HomeViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        return root;
+
     }
 }

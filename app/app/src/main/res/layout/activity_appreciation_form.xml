@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="302dp"
+        android:layout_height="334dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/appreciateText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+            android:id="@+id/appreciatee"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginRight="131dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/avatar_photo" />
+
+    <ImageButton
+            android:id="@+id/submitAppreciationButton"
+            android:layout_width="125dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginLeft="144dp"
+            android:layout_marginEnd="143dp"
+            android:layout_marginRight="143dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_spellcheck_black_24dp"
+            android:onClick="onSubmitClick"/>
+
+    <TextView
+            android:id="@+id/appreciateText"
+            android:layout_width="355dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginBottom="13dp"
+            android:gravity="center"
+            android:text="vvv Appreciate! vvv"
+            android:textSize="29dp"
+            app:layout_constraintBottom_toTopOf="@+id/submitAppreciationButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="364dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:text="Why would you like to appreciate them?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appreciatee" />
+</androidx.constraintlayout.widget.ConstraintLayout>
